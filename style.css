@@ -1,6 +1,20 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #F9FBFD;
+  background-color: #F2F7FA;
+  width: 900px;
+  margin: 0 auto;
+}
+
+section {
+  display: inline-block;
+  width: 700px;
+  vertical-align: top;
+}
+
+aside {
+  display: inline-block;
+  width: 180px;
+  margin-right: 15px;
 }
 h1 {
   font-size: 38px;
@@ -15,10 +29,14 @@ ol li:nth-of-type(2n){
 
 .ingredients-list > li {
   list-style: square;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 ol > li {
-  list-style: georgian;
+  list-style: lower-latin;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 header > img {
@@ -28,6 +46,10 @@ header > img {
 ul > li > a {
   color: inherit;
   text-decoration: none;
+}
+
+form label {
+  display: block;
 }
 
 input[type = "radio"] {
@@ -52,4 +74,28 @@ form input:last-child {
 
 form input:last-child:hover {
   background-color: rgba(0,0,0,0.4);
+}
+
+nav {
+  display: inline-block;
+}
+
+nav li {
+  display: inline-block;
+  padding: 20px;
+}
+
+figure img {
+  display: inline-block;
+  height: 500px;
+  width: inherit;
+}
+
+select {
+  margin: 10px 0;
+  width: 180px;
+}
+
+textarea {
+  width: 300px;
 }

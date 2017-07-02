@@ -25,7 +25,6 @@
     <header>
       <img src = "https://cdn.evbuc.com/eventlogos/33308251/appacademylogo.png">
       <nav>
-
         <ul>
           <li> <a href = "#description"> Description </a> </li>
           <li> <a href = "#ingredients"> Ingredients </a> </li>
@@ -33,7 +32,7 @@
         </ul>
       </nav>
     </header>
-    <h2> My Recipe:  B&eacutearnaise sauce   </h2>
+
 
     <aside>
       <h2 id = "ingredients"> Ingredients </h2>
@@ -49,12 +48,13 @@
     </aside>
 
     <section>
+        <h2> My Recipe:  B&eacutearnaise sauce   </h2>
       <figure>
         <img src="https://ohmydish.com/wp-content/uploads/2015/07/How-to-make-bearnaise-sauce-1024x683.jpg">
+        <figcaption>
+          <a href = "https://en.wikipedia.org/wiki/B%C3%A9arnaise_sauce"> B&eacutearnaise sauce (Wikipedia) </a>
+        </figcaption>
       </figure>
-      <figcaption>
-        <a href = "https://en.wikipedia.org/wiki/B%C3%A9arnaise_sauce"> B&eacutearnaise sauce (Wikipedia) </a>
-      </figcaption>
     </section>
 
     <section>
@@ -64,66 +64,65 @@
 
 
 
-    <section>
-      <h2 id = "directions"> Directions </h2>
-      <ol>
-        <li> Melt 1 tablespoon butter in a small saucepan over medium heat. Add shallots
-             and a pinch of salt and pepper; stir to coat. Stir in vinegar, reduce heat
-             to medium-low, and cook until vinegar is evaporated, 3-4 minutes.
-             Reduce heat to low and continue cooking shallots, stirring frequently, until tender and translucent,
-             about 5 minutes longer. Transfer shallot reduction to a small bowl and let cool completely. </li>
-        <li> Meanwhile, fill a blender with hot water to warm it; set aside. Melt remaining 1 cup butter
-             in a small saucepan over medium heat until butter is foamy. Transfer butter to a measuring cup. </li>
-        <li> Drain blender and dry well. Combine egg yolks, lemon juice, and 1 tablespoon water in
-             warm, dry blender. Purée mixture until smooth. Remove lid insert. With blender
-             running, slowly pour in hot butter in a thin stream of droplets, discarding milk solids at
-             bottom of measuring cup. </li>
-        <li> Pour sauce into a medium bowl. Stir in shallot reduction and tarragon and season to taste
-             with salt, pepper, and more lemon juice, if desired. </li>
-      </ol>
-    </section>
+    <section id = "main">
+        <h2 id = "directions"> Directions </h2>
+        <ol>
+          <li> Melt 1 tablespoon butter in a small saucepan over medium heat. Add shallots
+               and a pinch of salt and pepper; stir to coat. Stir in vinegar, reduce heat
+               to medium-low, and cook until vinegar is evaporated, 3-4 minutes.
+               Reduce heat to low and continue cooking shallots, stirring frequently, until tender and translucent,
+               about 5 minutes longer. Transfer shallot reduction to a small bowl and let cool completely. </li>
+          <li> Meanwhile, fill a blender with hot water to warm it; set aside. Melt remaining 1 cup butter
+               in a small saucepan over medium heat until butter is foamy. Transfer butter to a measuring cup. </li>
+          <li> Drain blender and dry well. Combine egg yolks, lemon juice, and 1 tablespoon water in
+               warm, dry blender. Purée mixture until smooth. Remove lid insert. With blender
+               running, slowly pour in hot butter in a thin stream of droplets, discarding milk solids at
+               bottom of measuring cup. </li>
+          <li> Pour sauce into a medium bowl. Stir in shallot reduction and tarragon and season to taste
+               with salt, pepper, and more lemon juice, if desired. </li>
+        </ol>
 
-    <section id="reviews">
-      <form id="review-form" action = '/reviews' method='post'>
-        <label for 'name'> Name </label>
-        <input id = 'name' type='text'> </input>
 
-        <br>
-        <br>
+      <section id="reviews">
+        <h2> Reviews </h2>
+        <form id="review-form" action = '/reviews' method='post'>
+          <label for 'name'> Name </label>
+          <input id = 'name' type='text'> </input>
 
-        <label for ='rating'> Rating </label>
-        <input type='radio' name = 'rating'  value = '5'> 5 </input>
-        <input type='radio' name = 'rating'  value = '4'> 4 </input>
-        <input type='radio' name = 'rating'  value = '3'> 3 </input>
-        <input type='radio' name = 'rating'  value = '2'> 2 </input>
-        <input type='radio' name = 'rating'  value = '1' checked> 1 </input>
+          <br>
+          <br>
 
-        <br>
-        <br>
+          <label for ='rating'> </label>
+          <input type='radio' name = 'rating'  value = '5'> 5 </input>
+          <input type='radio' name = 'rating'  value = '4'> 4 </input>
+          <input type='radio' name = 'rating'  value = '3'> 3 </input>
+          <input type='radio' name = 'rating'  value = '2'> 2 </input>
+          <input type='radio' name = 'rating'  value = '1' checked> 1 </input>
 
-        <label for = 'expertise'> Cooking Expertise </label>
-        <select id = 'expertise'>
-          <option disabled selected> Select Expertise </option>
-          <option value = 'Sometimes Cook'> Sometimes Cook </option>
-          <option value = 'Cook Everyday'> Cook Everyday </option>
-          <option value = 'Cooking Is A Hobby'> Cooking Is A Hobby </option>
-          <option value = 'Professional Chef'> Professional Chef </option>
-        </select>
+          <br>
+          <br>
 
-        <br>
-        <br>
+          <label for = 'expertise'> </label>
+          <select id = 'expertise'>
+            <option disabled selected> Select Expertise </option>
+            <option value = 'Sometimes Cook'> Sometimes Cook </option>
+            <option value = 'Cook Everyday'> Cook Everyday </option>
+            <option value = 'Cooking Is A Hobby'> Cooking Is A Hobby </option>
+            <option value = 'Professional Chef'> Professional Chef </option>
+          </select>
 
-        <label>
-          Review
+          <br>
+          <br>
+
           <textarea> </textarea>
-        </label>
 
-        <br>
-        <br>
+          <br>
+          <br>
 
-        <input type = 'submit' value = 'Submit Review'>
+          <input type = 'submit' value = 'Submit Review'>
 
-      </form>
+        </form>
+      </section>
     </section>
 
     <footer>
