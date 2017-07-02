@@ -1,7 +1,7 @@
 body {
   font-family: Arial, sans-serif;
   background-color: #F2F7FA;
-  width: 900px;
+  width: 60%;
   margin: 0 auto;
 }
 
@@ -76,8 +76,18 @@ form input:last-child:hover {
   background-color: rgba(0,0,0,0.4);
 }
 
+.clearfix:after {
+  content: "";
+  display:block;
+  clear: both;
+}
+
+header img {
+  float: left;
+}
+
 nav {
-  display: inline-block;
+  float: right;
 }
 
 nav li {
@@ -85,11 +95,6 @@ nav li {
   padding: 20px;
 }
 
-figure img {
-  display: inline-block;
-  height: 500px;
-  width: inherit;
-}
 
 select {
   margin: 10px 0;
